@@ -1,0 +1,30 @@
+[
+    {
+        "img": "../assets/sofas/sofas.jpg",
+        "alt": "Sofas",
+        "name": "Sofas",
+        "button": "View Sofas",
+        "link": "/sofas"
+    },
+    {
+        "img": "../assets/lamps/lamps.jpg",
+        "alt": "Lamps",
+        "name": "Lamps",
+        "button": "View Lamps",
+        "link": "/lamps"
+    },
+    {
+        "img": "../assets/tables/coffeetables.jpg",
+        "alt": "Coffee Tables",
+        "name": "Coffee Tables",
+        "button": "View Coffee Tables",
+        "link": "/coffeetables"
+    },
+    {
+        "img": "../assets/shelves/shelves.jpg",
+        "alt": "Shelves",
+        "name": "Shelves",
+        "button": "View Shelves",
+        "link": "/shelves"
+    }
+]
