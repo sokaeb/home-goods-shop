@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "ecommerce-gatsby-site",
+    title: "HOMESPACE",
+    description: "Create your dream home space with our variety of products.",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
