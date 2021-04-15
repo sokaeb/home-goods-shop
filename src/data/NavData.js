@@ -15,4 +15,8 @@ export const navData = [
         title: 'Coffee Tables',
         link: '/coffeetables'
     },
+    { 
+        title: 'Shelves',
+        link: '/shelves'
+    },
 ]

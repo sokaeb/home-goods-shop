@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
-import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description }) => {
-    const { pathname } = useLocation()
+const SeoData = ({ title, description }) => {
     const { site } = useStaticQuery(query)
 
     const {
@@ -29,13 +27,13 @@ const SEO = ({ title, description }) => {
       )
 }
 
-export default SEO
+export default SeoData
 
-SEO.propTypes = {
+SeoData.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
 }
-SEO.defaultProps = {
+SeoData.defaultProps = {
   title: null,
   description: null,
 }
