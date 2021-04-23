@@ -1,0 +1,44 @@
+.secondNavStyle .nav {
+    background-color: #2b2d42;
+}
+
+.productsTitle {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productCard {
+    /* border: 2px solid grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 3% auto;
+    padding: 1%;
+}
+
+.productImg {
+    max-width: 100%;
+    width: 90%;
+}
+
+.productDetails .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .productCard {
+        width: 95%;
+    }
+
+    .productContainer {
+        flex-direction: column;
+    }
+}

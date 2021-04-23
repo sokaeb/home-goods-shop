@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import SeoData from './Seo';
 import { GlobalStyle } from "../styles/GlobalStyles";
-import '../styles/header.css';
+import '../styles/product-pages.css';
 
 const Layout = ({ children }) => {
     return (
