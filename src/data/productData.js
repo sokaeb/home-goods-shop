@@ -14,7 +14,7 @@ const productsData = [
         price: 130,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/greensofa.jpg",
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "green sofa"
     },
     {
@@ -23,7 +23,7 @@ const productsData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/yellowsofa.jpg",
+        image: "https://images.unsplash.com/photo-1558898434-af897d9ac0a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "yellow sofa"
     },
     {
@@ -32,7 +32,7 @@ const productsData = [
         price: 100,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/silverlamp.jpg",
+        image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
         alt: "silver lamp"
     },
     {
@@ -41,7 +41,7 @@ const productsData = [
         price: 80,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/whitewoodlamp.jpg",
+        image: "https://images.unsplash.com/photo-1603889392094-d5ee157d724c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
         alt: "white lamp"
     },
     {
@@ -50,8 +50,8 @@ const productsData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/bronzelamp.jpg",
-        alt: "wood lamp"
+        image: "https://images.unsplash.com/photo-1607809714110-e34f71c7b2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=331&q=80",
+        alt: "bronze lamp"
     },
     {
         id: 7,
@@ -59,7 +59,7 @@ const productsData = [
         price: 100,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/blacktable.jpg",
+        image: "https://images.unsplash.com/photo-1615066594139-36c113e098d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=390&q=80",
         alt: "black table"
     },
     {
@@ -68,7 +68,7 @@ const productsData = [
         price: 80,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/bronzetable.jpg",
+        image: "https://images.unsplash.com/photo-1559662780-33af019fd570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
         alt: "bronze table"
     },
     {
@@ -77,7 +77,7 @@ const productsData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/woodtable.jpg",
+        image: "https://images.unsplash.com/photo-1617198998854-81717988fe4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
         alt: "wood table"
     },
     {
@@ -86,7 +86,7 @@ const productsData = [
         price: 40,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/woodshelf.jpg",
+        image: "https://images.unsplash.com/photo-1576069353653-21a2b29e3bc7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=754&q=80",
         alt: "wood shelf"
     },
     {
@@ -95,7 +95,7 @@ const productsData = [
         price: 50,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/goldshelf.jpg",
+        image: "https://images.unsplash.com/photo-1597254952656-f4a04f790155?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "gold shelf"
     },
     {
@@ -104,7 +104,7 @@ const productsData = [
         price: 30,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/whiteshelf.jpg",
+        image: "https://images.unsplash.com/photo-1574421189457-6e0a51abe767?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "white shelf"
     },
 ];
@@ -116,7 +116,7 @@ const sofaData = [
         price: 90,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/leathersofa.jpg",
+        image: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "leather sofa"
     },
     {
@@ -125,7 +125,7 @@ const sofaData = [
         price: 130,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/greensofa.jpg",
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "green sofa"
     },
     {
@@ -134,8 +134,8 @@ const sofaData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/yellowsofa.jpg",
-        alt: "red sofa"
+        image: "https://images.unsplash.com/photo-1558898434-af897d9ac0a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        alt: "yellow sofa"
     },
 ];
 
@@ -146,7 +146,7 @@ const lampData = [
         price: 100,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/silverlamp.jpg",
+        image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
         alt: "silver lamp"
     },
     {
@@ -155,7 +155,7 @@ const lampData = [
         price: 80,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/whitewoodlamp.jpg",
+        image: "https://images.unsplash.com/photo-1603889392094-d5ee157d724c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
         alt: "white lamp"
     },
     {
@@ -164,8 +164,8 @@ const lampData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "lamp",
-        image: "/assets/lamps/bronzelamp.jpg",
-        alt: "wood lamp"
+        image: "https://images.unsplash.com/photo-1607809714110-e34f71c7b2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=331&q=80",
+        alt: "bronze lamp"
     },
 ];
 
@@ -176,7 +176,7 @@ const coffeetableData = [
         price: 100,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/blacktable.jpg",
+        image: "https://images.unsplash.com/photo-1615066594139-36c113e098d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=390&q=80",
         alt: "black table"
     },
     {
@@ -185,7 +185,7 @@ const coffeetableData = [
         price: 80,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/bronzetable.jpg",
+        image: "https://images.unsplash.com/photo-1559662780-33af019fd570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
         alt: "bronze table"
     },
     {
@@ -194,7 +194,7 @@ const coffeetableData = [
         price: 55,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "coffeeTable",
-        image: "/assets/tables/woodtable.jpg",
+        image: "https://images.unsplash.com/photo-1617198998854-81717988fe4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
         alt: "wood table"
     },
 ];
@@ -206,7 +206,7 @@ const shelfData = [
         price: 40,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/woodshelf.jpg",
+        image: "https://images.unsplash.com/photo-1576069353653-21a2b29e3bc7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=754&q=80",
         alt: "black shelf"
     },
     {
@@ -215,7 +215,7 @@ const shelfData = [
         price: 50,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/goldshelf.jpg",
+        image: "https://images.unsplash.com/photo-1597254952656-f4a04f790155?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "gold shelf"
     },
     {
@@ -224,7 +224,7 @@ const shelfData = [
         price: 30,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "shelf",
-        image: "/assets/shelves/whiteshelf.jpg",
+        image: "https://images.unsplash.com/photo-1574421189457-6e0a51abe767?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "white shelf"
     },
 ];
