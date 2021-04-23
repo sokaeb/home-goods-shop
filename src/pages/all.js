@@ -7,6 +7,7 @@ import '../styles/product-pages.css';
 
 const Allproducts = () => {
     const [ products, setProducts ] = useState(productsData.productsData)
+
     // console.log(products)
 
     // useEffect(() => {

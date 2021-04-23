@@ -5,7 +5,7 @@ const productsData = [
         price: 90,
         description: "Cat ipsum dolor sit amet. Jump on fridge. Meow meow launch to pounce upon little yarn mouse meoooow.",
         category: "sofa",
-        image: "/assets/sofas/leathersofa.jpg",
+        image: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         alt: "leather sofa"
     },
     {
