@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import { BiHomeSmile } from 'react-icons/bi';
+import { FiShoppingBag } from 'react-icons/fi';
 import { navData } from '../data/NavData';
 import { Button } from '../components/Button';
 
@@ -16,9 +17,12 @@ const Header = () => {
                     <NavLink to={item.link} key={index}>{item.title}</NavLink>
                 ))}
             </NavMenu>
+            <BagContainer>
             <NavBtn>
                 <Button primary='true' to='/all'>Shop</Button>
             </NavBtn>
+            <Bag />
+            </BagContainer>
         </Nav>
 
     )
@@ -100,4 +104,17 @@ const NavBtn = styled.div`
     @media screen and (max-width: 768px) {
         display: none;
     }
+`
+
+const BagContainer =  styled.div`
+    display: flex;
+    align-items: flex-end;
+    margin: 0 2% 1% 0;
+`
+
+
+const Bag = styled(FiShoppingBag)`
+    color: #fff;
+    font-size: 2rem;
+
 `
