@@ -1,24 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { FiShoppingBag } from 'react-icons/fi';
 
 const Footer = () => {
-    const [ isDesktop, setDesktop ] = useState(window.innerWidth > 768);
-
-    const desktopFooter = () => {
-        setDesktop(window.innerWidth > 768)
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', desktopFooter);
-        return () => window.removeEventListener('resize', desktopFooter);
-    });
 
     return (
         <FooterContainer>
-           {isDesktop ? ( 
-            <>
+            <BagContainer>
+                    <Bag />
+                    <p>View Bag</p>
+            </BagContainer>
             <FooterLinksContainer>
                     <FooterText>
                         <h1>HOMESPACE</h1>
@@ -54,51 +46,7 @@ const Footer = () => {
                         <FooterLink to="/">Feedback</FooterLink>
                     </FooterLinkItems>
             </FooterLinksContainer>
-            </>
-        ) : (
-            <>
-                <BagContainer>
-                    <Bag />
-                    <p>View Bag</p>
-                </BagContainer>
-                <FooterLinksContainer>
-                    <FooterText>
-                        <h1>HOMESPACE</h1>
-                        <p>Create your dream home.</p>
-                    </FooterText>
-
-                    <FooterLinkItems>
-                        <FooterLinkTitle>About HOMESPACE</FooterLinkTitle>
-                        <FooterLink to="/">Our Story</FooterLink>
-                        <FooterLink to="/">Inspiration</FooterLink>
-                        <FooterLink to="/">Sustainability</FooterLink>
-                        <FooterLink to="/">Product News</FooterLink>
-                        <FooterLink to="/">Careers</FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksContainer>
-
-                <FooterLinksContainer>
-                <FooterLinkItems>
-                        <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to="/">Pinterest</FooterLink>
-                        <FooterLink to="/">Instagram</FooterLink>
-                        <FooterLink to="/">Facebook</FooterLink>
-                        <FooterLink to="/">Twitter</FooterLink>
-                        <FooterLink to="/">Youtube</FooterLink>
-                    </FooterLinkItems>
-
-                    <FooterLinkItems>
-                        <FooterLinkTitle>Help</FooterLinkTitle>
-                        <FooterLink to="/">FAQ</FooterLink>
-                        <FooterLink to="/">Contact Us</FooterLink>
-                        <FooterLink to="/">Customer Service</FooterLink>
-                        <FooterLink to="/">Return Policy</FooterLink>
-                        <FooterLink to="/">Feedback</FooterLink>
-                    </FooterLinkItems>
-            </FooterLinksContainer>
-            </>
-        )}
-        </FooterContainer>
+        </FooterContainer>  
     )
 }
 
@@ -188,12 +136,16 @@ const FooterLink = styled(Link)`
 `
 
 const BagContainer =  styled.div`
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 5%;
-    margin-top: -5%;
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5%;
+        margin-top: -5%;
+    }
 `
 
 const Bag = styled(FiShoppingBag)`

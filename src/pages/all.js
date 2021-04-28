@@ -8,23 +8,6 @@ import '../styles/product-pages.css';
 const Allproducts = () => {
     const [ products, setProducts ] = useState(productsData.productsData)
 
-    // console.log(products)
-
-    // useEffect(() => {
-    //     const getProducts = () => {
-    //         axios
-    //             .get('https://ghibliapi.herokuapp.com/films')
-    //             .then(res => {
-    //                 setProducts(res.data)
-    //                 // console.log(products)
-    //             })
-    //             .catch(err => {
-    //                 console.error('Server Error', err)
-    //             });
-    //     }
-    //     getProducts();
-    // }, []);
-
     return (
         <Layout>
         <Helmet bodyAttributes={{ class: 'secondNavStyle' }} />
