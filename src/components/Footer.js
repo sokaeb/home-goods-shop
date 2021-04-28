@@ -1,46 +1,103 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { FiShoppingBag } from 'react-icons/fi';
 
 const Footer = () => {
+    const [ isDesktop, setDesktop ] = useState(window.innerWidth > 768);
+
+    const desktopFooter = () => {
+        setDesktop(window.innerWidth > 768)
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', desktopFooter);
+        return () => window.removeEventListener('resize', desktopFooter);
+    });
+
     return (
         <FooterContainer>
+           {isDesktop ? ( 
+            <>
             <FooterLinksContainer>
-                <FooterText>
-                    <h1>HOMESPACE</h1>
-                    <p>Create your dream home.</p>
-                </FooterText>
+                    <FooterText>
+                        <h1>HOMESPACE</h1>
+                        <p>Create your dream home.</p>
+                    </FooterText>
 
+                    <FooterLinkItems>
+                        <FooterLinkTitle>About HOMESPACE</FooterLinkTitle>
+                        <FooterLink to="/">Our Story</FooterLink>
+                        <FooterLink to="/">Inspiration</FooterLink>
+                        <FooterLink to="/">Sustainability</FooterLink>
+                        <FooterLink to="/">Product News</FooterLink>
+                        <FooterLink to="/">Careers</FooterLink>
+                    </FooterLinkItems>
+                </FooterLinksContainer>
+
+                <FooterLinksContainer>
                 <FooterLinkItems>
-                    <FooterLinkTitle>About HOMESPACE</FooterLinkTitle>
-                    <FooterLink to="/">Our Story</FooterLink>
-                    <FooterLink to="/">Inspiration</FooterLink>
-                    <FooterLink to="/">Sustainability</FooterLink>
-                    <FooterLink to="/">Product News</FooterLink>
-                    <FooterLink to="/">Careers</FooterLink>
-                </FooterLinkItems>
+                        <FooterLinkTitle>Social Media</FooterLinkTitle>
+                        <FooterLink to="/">Pinterest</FooterLink>
+                        <FooterLink to="/">Instagram</FooterLink>
+                        <FooterLink to="/">Facebook</FooterLink>
+                        <FooterLink to="/">Twitter</FooterLink>
+                        <FooterLink to="/">Youtube</FooterLink>
+                    </FooterLinkItems>
+
+                    <FooterLinkItems>
+                        <FooterLinkTitle>Help</FooterLinkTitle>
+                        <FooterLink to="/">FAQ</FooterLink>
+                        <FooterLink to="/">Contact Us</FooterLink>
+                        <FooterLink to="/">Customer Service</FooterLink>
+                        <FooterLink to="/">Return Policy</FooterLink>
+                        <FooterLink to="/">Feedback</FooterLink>
+                    </FooterLinkItems>
             </FooterLinksContainer>
+            </>
+        ) : (
+            <>
+                <BagContainer>
+                    <Bag />
+                    <p>View Bag</p>
+                </BagContainer>
+                <FooterLinksContainer>
+                    <FooterText>
+                        <h1>HOMESPACE</h1>
+                        <p>Create your dream home.</p>
+                    </FooterText>
 
-            <FooterLinksContainer>
-            <FooterLinkItems>
-                    <FooterLinkTitle>Social Media</FooterLinkTitle>
-                    <FooterLink to="/">Pinterest</FooterLink>
-                    <FooterLink to="/">Instagram</FooterLink>
-                    <FooterLink to="/">Facebook</FooterLink>
-                    <FooterLink to="/">Twitter</FooterLink>
-                    <FooterLink to="/">Youtube</FooterLink>
-                </FooterLinkItems>
+                    <FooterLinkItems>
+                        <FooterLinkTitle>About HOMESPACE</FooterLinkTitle>
+                        <FooterLink to="/">Our Story</FooterLink>
+                        <FooterLink to="/">Inspiration</FooterLink>
+                        <FooterLink to="/">Sustainability</FooterLink>
+                        <FooterLink to="/">Product News</FooterLink>
+                        <FooterLink to="/">Careers</FooterLink>
+                    </FooterLinkItems>
+                </FooterLinksContainer>
 
+                <FooterLinksContainer>
                 <FooterLinkItems>
-                    <FooterLinkTitle>Help</FooterLinkTitle>
-                    <FooterLink to="/">FAQ</FooterLink>
-                    <FooterLink to="/">Contact Us</FooterLink>
-                    <FooterLink to="/">Customer Service</FooterLink>
-                    <FooterLink to="/">Return Policy</FooterLink>
-                    <FooterLink to="/">Feedback</FooterLink>
-                </FooterLinkItems>
-            </FooterLinksContainer>
+                        <FooterLinkTitle>Social Media</FooterLinkTitle>
+                        <FooterLink to="/">Pinterest</FooterLink>
+                        <FooterLink to="/">Instagram</FooterLink>
+                        <FooterLink to="/">Facebook</FooterLink>
+                        <FooterLink to="/">Twitter</FooterLink>
+                        <FooterLink to="/">Youtube</FooterLink>
+                    </FooterLinkItems>
 
+                    <FooterLinkItems>
+                        <FooterLinkTitle>Help</FooterLinkTitle>
+                        <FooterLink to="/">FAQ</FooterLink>
+                        <FooterLink to="/">Contact Us</FooterLink>
+                        <FooterLink to="/">Customer Service</FooterLink>
+                        <FooterLink to="/">Return Policy</FooterLink>
+                        <FooterLink to="/">Feedback</FooterLink>
+                    </FooterLinkItems>
+            </FooterLinksContainer>
+            </>
+        )}
         </FooterContainer>
     )
 }
@@ -54,6 +111,11 @@ const FooterContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     color: #000;
     background: #fafafb;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 const FooterLinksContainer = styled.div`
@@ -77,6 +139,16 @@ const FooterText = styled.div`
     @media screen and (max-width: 400px) {
         padding: 1rem;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 5%;
+        
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 20px;
+        }
+    }
 `
 
 const FooterLinkItems = styled.div`
@@ -93,6 +165,10 @@ const FooterLinkItems = styled.div`
 const FooterLinkTitle = styled.h2`
     font-size: 14px;
     margin-bottom: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
 `
 
 const FooterLink = styled(Link)`
@@ -105,4 +181,21 @@ const FooterLink = styled(Link)`
         color: #f26a2e;
         transition: 0.3s ease-out;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+`
+
+const BagContainer =  styled.div`
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: -5%;
+`
+
+const Bag = styled(FiShoppingBag)`
+    margin-right: 1%;
 `
